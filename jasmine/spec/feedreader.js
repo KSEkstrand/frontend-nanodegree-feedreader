@@ -72,10 +72,10 @@ $(function() {
          beforeEach(function (done) {
              loadFeed(0, function () {
                initialContent = $('.feed').text();
-             });
-             loadFeed(1, function () {
-                 newContent = $('.feed').text();
-                 done();
+               loadFeed(1, function () {
+                   newContent = $('.feed').text();
+                   done();
+               });
              });
            });
          it('should be loading new content', function(){
